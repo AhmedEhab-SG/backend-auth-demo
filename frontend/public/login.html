@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="login.js"></script>
+    <title>login-demo</title>
+  </head>
+  <body>
+    <div class="page">
+      <form id="login" action="/login" method="POST">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          minlength="3"
+          maxlength="50"
+        /><br />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          minlength="3"
+          maxlength="50"
+        /><br />
+        <input type="submit" value="login" />
+      </form>
+      <hr />
+      <a href="books.html">Books</a>
+      <a href="register.html">Register</a>
+    </div>
+  </body>
+</html>
